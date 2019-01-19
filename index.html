@@ -3,10 +3,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="utf-8">
-  <title></title>
-  <link rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title>Loud.com</title>
+  <link rel="icon" href="img/logofin.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css\slider.css">
   <link rel="stylesheet" href="css\navbar.css">
   <link rel="stylesheet" href="css\startBtn.css">
@@ -31,18 +30,51 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <style>
+  #loading {
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     position: fixed;
+     display: block;
+     opacity: 0.7;
+     background-color: #fff;
+     z-index: 99;
+     text-align: center;
+  }
 
+  #loading-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    top: 100px;
+    z-index: 100;
+  }
+</style>
+<script type="text/javascript">
+    window.onload = function(){ document.getElementById("loading").style.display = "none" }
+</script>
 </head>
 
 <body style="margin: 0;  background-image: url(img/bloggerBack.jpg);background-size: cover;  background-repeat:no-repeat;">
+
+
+  <!-- Loader -->
+  <div id="loading">
+    <img id="loading-image" src="img/loader.gif" alt="Loading..." />
+  </div>
+  <!-- Loader -->
+
 
   <!--Navigation Bar-->
   <section class="d-flex flex-cloumn " style="position: relative;display: block;">
 
     <nav class="fill bg-info list-inline" >
       <!--Company Name-->
-      <ul class="mb-0"  style="float:left;font-size:25px;letter-spacing: 3px;font-family: 'IBM Plex Serif', serif;">
-        <li ><a href="#">Loud.org</a></li>
+      <ul class="mb-0 list-inline"  style="float:left;font-size:25px;letter-spacing: 3px;font-family: 'IBM Plex Serif', serif;">
+        <img src="img/logofin.png" style="left:11%;top:0%;width:4%;position:absolute">
+        <li class="list-inline-item"><a href="#">Loud.org</a></li>
       </ul>
       <!--Other items-->
       <ul class="list-inline-item" style="font-size:20px;">
