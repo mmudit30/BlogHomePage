@@ -1,0 +1,27 @@
+.hovericon:hover{
+	background: #EA6212;
+}
+.list-unstyled li a{
+  text-decoration: none;
+  color: #193449;
+}
+.list-unstyled li a:hover{
+  text-decoration: none;
+  color: #267bbe;
+}
+
+.imageBox ul li:hover:nth-child(1){
+  background: #3b5999;
+}
+.imageBox ul li:hover:nth-child(2){
+  background: #55acee;
+}
+.imageBox ul li:hover:nth-child(3){
+  background: #dd4b39;
+}
+.imageBox ul li:hover:nth-child(4){
+  background: #8a3ab9;
+}
+.imageBox ul li:hover:nth-child(5){
+  background: #0077B5;
+}

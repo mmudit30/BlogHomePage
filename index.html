@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css\slider.css">
+  <link rel="stylesheet" href="css\navbar.css">
+  <link rel="stylesheet" href="css\startBtn.css">
+  <link rel="stylesheet" href="css\bloggers.css">
+  <link rel="stylesheet" href="css\someblogs.css">
+  <link rel="stylesheet" href="css\iconss.css">
+  <link rel="stylesheet" href="css\showcase.css">
+  <link rel="stylesheet" href="css\mousescroll.css">
+  <link rel="stylesheet" href="css\hovericon.css">
+  <link rel="stylesheet" href="css\floating.css">
+  <link rel="stylesheet" href="css\searchicon.css">
+  <link rel="stylesheet" href="css\login.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Ubuntu|IBM+Plex+Serif:400i|Exo|Roboto+Condensed" rel="stylesheet">
+  <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
+  <link rel="stylesheet" href="bootstrap-4.2.1-dist\css\bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="margin: 0;  background-image: url(img/bloggerBack.jpg);background-size: cover;  background-repeat:no-repeat;">
+
+  <!--Navigation Bar-->
+  <section class="d-flex flex-cloumn " style="position: relative;display: block;">
+
+    <nav class="fill bg-info list-inline" >
+      <!--Company Name-->
+      <ul class="mb-0"  style="float:left;font-size:25px;letter-spacing: 3px;font-family: 'IBM Plex Serif', serif;">
+        <li ><a href="#">Loud.org</a></li>
+      </ul>
+      <!--Other items-->
+      <ul class="list-inline-item" style="font-size:20px;">
+
+        <!--other-->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#footer">About</a></li>
+        <li><a href="#footer">More</a></li>
+        <li><a href="#footer">Contact Us</a></li>
+      </ul>
+
+      <ul style="float:right;" class="list-inline-item">
+        <!--animated search box -->
+        <li>
+          <div id="wrap" class="text-danger">
+            <form action="" autocomplete="on">
+              <input id="search" name="search" type="text"
+              placeholder="What're you looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+            </form>
+          </div>
+        </li>
+        <li  style="background: rgba(220,53,69,0.6);border-radius:6px;">
+          <li ><a href="#" style="border-radius:6px;border-width:2px;
+          border-style:solid; border-color:rgba(#000000, 0.81); color:white">SignUp</a></li>
+          <li ><a href="#" class=" mr-5" style="border-radius:6px;border-width:2px;
+          border-style:solid; border-color:rgba(#000000, 0.81); color:white">LogIn</a></li>
+        </li>
+      </ul>
+
+    </nav>
+  </section>
+  <!--Navigation Bar-->
+
+  <!-- photo slide show -->
+  <slider class="d-flex " id="home"  style="display:block; position:relative">
+    <slide><p class="text-white">Adaptable at first use</p></slide>
+    <slide><p class="text-white">Power your Blogs, Magazines</p></slide>
+    <slide><p class="text-white">Modern Publishing technology</p></slide>
+    <slide><p class="text-white">A Blog Platform for all</p></slide>
+  </slider>
+  <!-- photo slide show -->
+
+  <!-- scrollingmouse button on slideshow -->
+  <a  class="go-next" href="#particlesB" style="cursor:pointer">
+    <div id="mouse-scroll">
+      <div class="mouse">
+        <div class="mouse-in"></div>
+      </div>
+      <div>
+        <span class="down-arrow-1"></span>
+        <span class="down-arrow-2"></span>
+        <span class="down-arrow-3"></span>
+      </div>
+    </div>
+  </a>
+
+  <!--Start Button -->
+  <section class="startBtn">
+    <div class="button text-dark">
+      <a href="" class=" text-dark">Start now</a>
+    </div>
+    <div class="cover">
+      <div class="innie bg-danger">
+        Hello
+      </div>
+      <div class="spine bg-danger"></div>
+      <div class="outie bg-danger ">
+        Hello
+      </div>
+    </div>
+    <div class="shadow"></div>
+  </section>
+<!-- Start Button -->
+  <!--designed-->
+  <section class="showcase h-100 bg-info" >
+    <div class="" id="particlesB" style="height:30%;width:100%">          </div>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" data-aos="zoom-in" style="background-image: url('img/loudlogo3.png');background-size:cover;background-repeat:no-repeat; background-position: 50% 80%;"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <h3 class="lead mb-0" style="font-weight:400;font-size:45px;">Welcome to</h3>
+          <h2 class="mr-1" style="font-weight:600;font-size:50px;font-family: 'IBM Plex Serif';" >LOUD.ORG</h2>
+          <h3 class="lead mb-0 ml-5" style="font-weight:400;font-size:20px;">
+            <ul class="list-unstyled" style="font-family: 'Ubuntu';">
+              <li class="ml-2 my-1">Here's what's trending</li>
+              <li  class="ml-3 my-1">Connect to professionals</li>
+              <li  class="ml-4 my-1">Put anything you want here.</li>
+            </ul>
+            <h3>
+              <div class="col-4">
+                <button type="submit" class="btn btn-block bg-danger btn-lg btn-primary">SIGN UP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- designed-->
+
+
+  <!-- Features -->
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4" data-aos="flip-left" data-aos-delay="100">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="fas fa-pen-nib m-auto text-dark"></i>
+            </div>
+            <h3>Designed simple</h3>
+            <p class="lead mb-0">You don't need to learn it.Every post published renders beautifully all over the web. </p>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="flip-up" data-aos-delay="100">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="fas fa-hand-holding-heart m-auto text-dark"></i>
+            </div>
+            <h3>Made for love, not for profit</h3>
+            <p class="lead mb-0">Loud is a non-profit organisation.Everything we
+              do is about pushing the boundaries of online publishing. </p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="flip-right" data-aos-delay="100">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fas fa-blog m-auto text-dark"></i>
+              </div>
+              <h3>Flexible content management</h3>
+              <p class="lead mb-0">This functionality gives you fine-grained control over the categorisation of your content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!--Features-->
+
+
+
+
+  <!--Earn Money-->
+    <section class="showcase bg-dark">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+          <div data-aos="fade-left" data-aos-delay="100" class="col-lg-5 order-lg-2 text-white showcase-img"
+          style="background-image: url('img/earn.png'); background-size:contain;background-repeat:no-repeat"></div>
+
+          <div class="col-lg-7 order-lg-1 features-icons px-5 my-auto showcase-text" style="padding-top:5rem">
+            <div class="features-icons-item list-inline text-success text-center mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex list-inline-item">
+                <i class="fas fa-credit-card m-auto "></i>
+              </div>
+              <h2 style="font-weight:600;font-size:35px;font-family:Exo" class="typejs  list-inline-item">
+                <div id="typed-strings">
+                  <p>Earn Money</p>
+                  <p>Follow the steps</p>
+                </div>
+                <span id="typed"></span>
+              </h2>
+            </div>
+
+            <h3 class="lead mb-0 text-light" style="font-weight:200;font-size:25px;">
+              <ul class="list-unstyled">
+                <li class="m-2" data-aos="fade-right" data-aos-delay="50"data-aos-anchor-placement="bottom-bottom">
+                  <i class="far fa-check-circle text-danger"></i>
+                  Set up your blog
+                </li>
+                <li class="m-2" data-aos="fade-right" data-aos-delay="100"data-aos-anchor-placement="bottom-bottom">
+                  <i class="far fa-check-circle text-danger"></i>
+                  Start creating useful content
+                </li>
+                <li class="m-2" data-aos="fade-right" data-aos-delay="150"data-aos-anchor-placement="bottom-bottom">
+                  <i class="far fa-check-circle text-danger"></i>
+                  Get off your blog and start finding readers
+                </li>
+                <li class="m-2" data-aos="fade-right" data-aos-delay="200"data-aos-anchor-placement="bottom-bottom">
+                  <i class="far fa-check-circle text-danger"></i>
+                  Build engagement with the readers that come
+                </li>
+                <li class="m-2" data-aos="fade-right" data-aos-delay="250"data-aos-anchor-placement="bottom-bottom">
+                  <i class="far fa-check-circle text-danger"></i>
+                  Start making money from the readership you have through one or more of a variety of income streams
+                </li>
+              </ul>
+            </h3>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  <!--Earn Money-->
+
+  <!--Some blogs-->
+  <section id="someblogs">
+
+    <div class="container-fluid" style="font-family:Roboto Condensed">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="post-image">
+                <img src="img/blog1.jpg" class="img-responsive" alt="">
+              </div>
+                <div class="news-content">
+                  <span class="category">Technology</span>
+                  <div class="post-meta">
+                    <span class="author">
+                      <a href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Kerry
+                      </a>
+                    </span>
+                    <span class="time">
+                      <a href="#">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        Jan 1, 2019
+                      </a>
+                    </span>
+                    <span class="comments ml-3 justify-content-end">
+                      <a href="#">
+                        <i class="far fa-comment-alt justify-content-end"></i>
+                        56
+                      </a>
+                    </span>
+                    <div class="clearfix">
+                    </div>
+                  </div>
+                  <h2 class="post-header">A Demonology of Algorithms
+                  </h2>
+                  <p>In this conversation,part two of a live Team Human show at Civic Hall,
+                    Pesce offers a thought-provoking frame through which we
+                    might better understand our relationship to algorithms and artificial intelligence</p>
+                </div>
+            </div>
+          </div><div class="col-sm-4">
+            <div class="card">
+              <div class="post-image">
+                <img src="img/blog2.jpg" class="img-responsive" alt="">
+              </div>
+                <div class="news-content">
+                  <span class="category">Music</span>
+                  <div class="post-meta">
+                    <span class="author">
+                      <a href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Mark
+                      </a>
+                    </span>
+                    <span class="time">
+                      <a href="#">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        Jan 11, 2019
+                      </a>
+                    </span>
+                    <span class="comments ml-3 justify-content-end">
+                      <a href="#">
+                        <i class="far fa-comment-alt justify-content-end"></i>
+                        24
+                      </a>
+                    </span>
+                    <div class="clearfix">
+                    </div>
+                  </div>
+                  <h2 class="post-header">The End of iTunes
+                  </h2>
+                  <p>nother year, another CES. Which I didn’t go to — I’ve still amazingly never been, and I could not be less sad about that.¹ Anyway, it’s beyond old hat to rag on CES these days. And there was news out of the event that I found interesting this year — and yes, it involved Apple</p>
+                </div>
+            </div>
+          </div><div class="col-sm-4">
+            <div class="card">
+              <div class="post-image">
+                <img src="img/blog3.jpg" class="img-responsive" alt="">
+              </div>
+                <div class="news-content">
+                  <span class="category">News</span>
+                  <div class="post-meta">
+                    <span class="author">
+                      <a href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Luis
+                      </a>
+                    </span>
+                    <span class="time">
+                      <a href="#">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        Jan 8, 2019
+                      </a>
+                    </span>
+                    <span class="comments ml-3 justify-content-end">
+                      <a href="#">
+                        <i class="far fa-comment-alt justify-content-end"></i>
+                        21
+                      </a>
+                    </span>
+                    <div class="clearfix">
+                    </div>
+                  </div>
+                  <h2 class="post-header">Read These Books
+                  </h2>
+                  <p>This is a book that explains how to cultivate and protect
+                     that skill — the ability to do deep work. I strongly urge you to begin this practice
+                      in 2018— if you want to get anything done or perform your best.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--Some blogs-->
+
+
+    <!--top bloggers -->
+
+    <section id="peoplecards" class="peoplecards"  style="display:block;position:relative;background-color: orange;">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <p  data-aos="fade-down-right" class="list-inline" data-aos-anchor-placement="top-center"
+            style="" id="topB" data-aos-delay="200"><ex style="color:black">Top</ex> <ex class="bg-danger text-light">Bloggers</ex>
+          </p>
+          <div class="col-sm-3  blog-card" data-aos="fade-right">
+            <div class="imageBox">
+              <img src="img/people2.jpg" style="width:100%" alt="" class="image-responsive">
+              <h3>ROBERT MATTE<br>1.6k posts</h3>
+              <ul>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+          <div class="col-sm-3  blog-card" data-aos="fade-up">
+            <div class="imageBox" data-tilt>
+              <img src="img/people3.jpg" style="width:100%" alt="" class="image-responsive">
+              <h3>MUDIT MITTAL<br>1.4k posts</h3>
+              <ul>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+          <div class="col-sm-3  blog-card" data-aos="fade-down">
+            <div class="imageBox">
+              <img src="img/people4.jpg" style="width:100%" alt="" class="image-responsive">
+              <h3>NEERAJ MITTAL<br>1.4k posts</h3>
+              <ul>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+          <div class="col-sm-3  blog-card" data-aos="fade-left">
+            <div class="imageBox">
+              <img src="img/people1.jpg" style="width:100%" alt="" class="image-responsive">
+              <h3>SHIVAM MITTAL <br>1.2k posts</h3>
+              <ul>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li><li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!--top bloggers-->
+
+
+<!--login-->
+<section class="login-form" >
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center">Sign In</h5>
+              <form class="form-signin">
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                  <label for="inputEmail">Email address</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember password</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+                <hr class="my-4">
+                <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--login-->
+
+
+
+  <!-- Footer -->
+  <footer class=" font-small  stylish-color-dark " id="footer" style="position:relative; background:orange">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mt-2 mb-0" style="font-family: 'IBM Plex Serif', serif;">LOUD.ORG</h5>
+          <p>We provide microblogging service designed to discover information on the Web </p>
+          <!--Copyright social-->
+          <div class=" list-inline text-center">
+
+            <!-- Social buttons -->
+            <ul class="list-inline list-inline-item list-unstyled">
+              <li class="list-inline-item mr-3">
+                <a href="#" class="btn-floating btn-fb mx-1">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-linkedin fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-instagram fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- Social buttons -->
+            <!-- Copyright -->
+            <div class="footer-copyright list-inline-item float-right ">© Foundation 2018
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!--Copyright social-->
+
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-danger text-uppercase mt-3 mb-4">Help</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" >Help Center</a>
+            </li>
+            <li>
+              <a href="#!">Help Forum</a>
+            </li>
+            <li>
+              <a href="#!">Video Tutorials</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase text-danger mt-3 mb-4">Developers</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Documentation</a>
+            </li>
+            <li>
+              <a href="#!">API Reference</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-danger">Community</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">About</a>
+            </li>
+            <li>
+              <a href="#!">Customer</a>
+            </li>
+            <li>
+              <a href="#!">Our Blog</a>
+            </li>
+            <li>
+              <a href="#!">Terms of service</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+
+  </footer>
+  <!-- Footer -->
+
+
+
+
+  <script src="js/particles.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+  <script  src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+  <script src="js/tilt.jquery.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.blog-card').tilt({
+        maxTilt:10,
+        glare: true,
+        maxGlare: 0.5
+      })
+    })
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 500,
+      offset: 300,
+      duration:1000
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="js/typed.js" charset="utf-8"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 40,
+      cursorChar: '#',
+      backSpeed: 30,
+      backDelay: 2500,
+      startDelay: 1000,
+      loop: true
+    });
+  </script>
+
+
+</body>
+</html>

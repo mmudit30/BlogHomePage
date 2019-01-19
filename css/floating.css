@@ -1,0 +1,128 @@
+div.floating img:nth-child(1){
+  position: absolute;
+  transform: translate(30%,-40%);
+  width: 10%;
+  height: 20%;
+}
+div.floating img:nth-child(2){
+  position: absolute;
+  width: 5%;
+  transform: translate(250%,-150%);
+  height: 10%;
+}
+div.floating img:nth-child(3){
+  position: absolute;
+
+  transform: translate(250%,50%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(4){
+  position: absolute;
+  transform: translate(30%,-170%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(5){
+  position: absolute;
+  transform: translate(300%,110%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(6){
+  position: absolute;
+  transform: translate(300%,-150%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(7){
+  position: absolute;
+  transform: translate(10%,-130%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(8){
+  position: absolute;
+  transform: translate(260%,-50%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(9){
+  position: absolute;
+  transform: translate(-70%,-80%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(10){
+  position: absolute;
+  transform: translate(130%,-180%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(11){
+  position: absolute;
+  transform: translate(180%,-150%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(12){
+  position: absolute;
+  transform: translate(130%,90%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(13){
+  position: absolute;
+
+  transform: translate(-80%,100%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(14){
+  position: absolute;
+  transform: translate(240%,30%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(15){
+  position: absolute;
+  transform: translate(0%,110%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(16){
+  position: absolute;
+  transform: translate(-40%,-170%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(17){
+  position: absolute;
+  transform: translate(230%,130%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(18){
+  position: absolute;
+  transform: translate(0%,-50%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(19){
+  position: absolute;
+  transform: translate(300%,-60%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(20){
+  position: absolute;
+  transform: translate(-10%,40%);
+  width: 5%;
+  height: 10%;
+}
+div.floating img:nth-child(21){
+  position: absolute;
+  transform: translate(-90%,40%);
+  width: 5%;
+  height: 10%;
+}

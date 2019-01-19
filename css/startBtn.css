@@ -1,0 +1,109 @@
+section.startBtn, section.startBtn div {
+  /* See it in slo-mo, you can change this */
+  transition-duration: .6s;
+
+}
+
+
+section.startBtn, div.button {
+  transition-timing-function: ease;
+}
+
+section.startBtn {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  width: 10%;
+  padding: .375rem .375rem 0;
+  height: 2.5rem;
+  right:20%;
+	top:80%;
+  background: #50545c;
+  border-radius: .25rem;
+  perspective: 300;
+
+}
+
+
+div.button {
+  opacity: 1;
+}
+
+div.cover {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform-origin: center bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 "icon";
+  color: #ccc;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+div.innie, div.outie, div.spine, div.shadow {
+  position: absolute;
+  border-radius: 5;
+  width: 100%;
+}
+
+div.innie, div.outie {
+  height: 100%;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+  border-radius: .25rem;
+}
+
+div.innie {
+  /* background-color: #27c942; */
+  text-shadow: 0 -2px 4px rgba(0,0,0,.2);
+}
+
+div.spine {
+  top: .25rem;
+  background: #f9fffa;
+  height: .25rem;
+  transform: rotateX(90deg);
+  transform-origin: center top;
+}
+section.startBtn div a{
+  text-decoration: none;
+  font-family: Ubuntu;
+}
+div.shadow {
+  top: 100%;
+  left: 0;
+  height: 3.5rem;
+  transform-origin: center top;
+  transform: rotateX(90deg);
+  opacity: 0;
+  z-index: 0;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,.6) 0%, transparent 100%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+  border-radius: .4rem;
+
+}
+
+div.outie {
+  /* background-color: #27c942; */
+  transform: translateZ(.25rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+section.startBtn:hover { background: #27aa72; }
+section.startBtn:hover .button { opacity: 1; }
+
+section.startBtn:hover .cover, section.startBtn:hover .innie, section.startBtn:hover .spine,
+section.startBtn:hover .outie, section.startBtn:hover .spine {
+  transition-timing-function: cubic-bezier(.2,.7,.1,1.1);
+}
+
+section.startBtn:hover .cover { transform: rotateX(-120deg);  }
+
+section.startBtn:hover .innie { background-color: #ffffff; }
+section.startBtn:hover .spine { background-color: #ffffff; }
+section.startBtn:hover .outie { background-color: #2174A0; color: rgba(200, 35, 35, 0.7); }
+
+section.startBtn:hover .shadow {
+  opacity: 1;
+  transform: rotateX(45deg) scale(.95);
+}
