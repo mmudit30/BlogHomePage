@@ -1,5 +1,12 @@
+#someblogs .heads{
+
+}
+
 #someblogs{
   padding: 180px 0 0;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 div.card{
    position: relative;
